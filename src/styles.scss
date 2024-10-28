@@ -1,4 +1,12 @@
 @use '@angular/material' as mat;
+@use 'font-faces';
+
+/* Font Awesome */
+@import '../public/fontawesome/css/fontawesome.css';
+@import '../public/fontawesome/css/solid.css';
+@import '../public/fontawesome/css/brands.css';
+
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +29,8 @@ $purple-light: mat.define-theme(
 html,
 body {
   height: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) calc(1rem + env(safe-area-inset-bottom))
+  env(safe-area-inset-left);
 }
 body {
   margin: 0;
