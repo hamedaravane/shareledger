@@ -6,8 +6,17 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "format": "prettier --write .",
+    "format:diff": "prettier --list-different ."
   },
+  "homepage": "https://github.com/hamedaravane/shareledger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamedaravane/shareledger.git"
+  },
+  "author": "Hamed Arghavan",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",

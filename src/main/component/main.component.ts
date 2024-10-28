@@ -1,9 +1,19 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { BottomNavComponent } from '../../shared/component/bottom-nav/bottom-nav.component';
 
 @Component({
-  selector: 'main',
+  selector: 'app-content',
   standalone: true,
-  imports: [],
-  template: ``,
+  imports: [RouterOutlet, BottomNavComponent],
+  template: `
+    <router-outlet />
+    <bottom-nav></bottom-nav>
+  `,
+  styles: `
+    :host {
+      display: block;
+    }
+  `,
 })
 export class MainComponent {}
